@@ -11,7 +11,7 @@ function giphy(search = searchTerm) {
       console.log(response);
       response.json().then((json) => {
         img.src = `${json.data.images.original.url}`;
-    //   });
+      });
     })
     .catch((err) => console.log("shiit" + err));
 }
